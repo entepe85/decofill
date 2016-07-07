@@ -9,7 +9,7 @@ Place the script from `dist/decofill.js` before your own JS, then call `decoFill
 ### Example
 ```
 (function () {
-    decoEls = document.querySelectorAll('.decoration-text');
+    var decoEls = document.querySelectorAll('.decoration-text');
     decoFill(decoEls);
 }(window));
 ```
