@@ -7,6 +7,7 @@ const forEach = [].forEach,
         }
         return CSS.supports('( box-decoration-break: clone ) or ( -webkit-box-decoration-break: clone )');
     },
+    // TODO: Detect the wrapping element automatically and insert the slices correspondingly
     decoFill = els => {
         if (!hasBoxDecorationBreak()) {
             forEach.call(els, textEl => {
