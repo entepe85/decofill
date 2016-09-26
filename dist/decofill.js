@@ -16,7 +16,7 @@ decoFill = function decoFill(els) {
             var content = textEl.innerHTML,
                 wrapTag = textEl.tagName;
             textEl.classList.add('box-decoration-polyfill');
-            textEl.outerHTML = '<' + wrapTag + '>' + content.replace(/<br(\s\/)?>/g, '</' + wrapTag + '><br /><' + wrapTag + '>') + '</' + wrapTag + '>';
+            textEl.outerHTML = '<' + wrapTag + '>' + content.replace(/<br(\s\/)?>/g, '</' + wrapTag + '><br /><' + wrapTag + '>') + ('</' + wrapTag + '>');
         });
     }
 };
