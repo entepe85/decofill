@@ -1,0 +1,23 @@
+{
+  "name": "decofill.js",
+  "description": "Polyfill for box-decoration-break",
+  "main": "dist/decofill.js",
+  "authors": [
+    "Nils Butenschön <moin@nilsbutenschoen.de> (https://nilsbutenschoen.de)"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "javascript",
+    "css3",
+    "polyfill"
+  ],
+  "homepage": "https://github.com/entepe85/decofill",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "bower",
+    "test",
+    "tests"
+  ]
+}
