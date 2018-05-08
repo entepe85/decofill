@@ -1,22 +1,17 @@
 {
-  "name": "decofill",
-  "version": "1.0.0",
-  "description": "Polyfill for box-decoration-break",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel es6 -d dist"
-  },
-  "keywords": [
-    "javascript",
-    "css3",
-    "polyfill"
-  ],
-  "author": "Nils Butenschön <moin@nilsbutenschoen.de> (https://nilsbutenschoen.de)",
-  "license": "MIT",
-  "devDependencies": {
-    "babel": "^6.5.2",
-    "babel-cli": "^6.10.1",
-    "babel-preset-es2015": "^6.9.0"
-  }
+    "name": "decofill",
+    "version": "1.0.1",
+    "description": "Polyfill for box-decoration-break",
+    "main": "dist/decofill.js",
+    "scripts": {
+        "build": "babel es6 -d dist"
+    },
+    "keywords": ["javascript", "css3", "polyfill"],
+    "author": "Nils Petersen <kontakt@entepe.de> (https://entepe.de)",
+    "license": "MIT",
+    "devDependencies": {
+        "babel": "^6.5.2",
+        "babel-cli": "^6.10.1",
+        "babel-preset-es2015": "^6.9.0"
+    }
 }
