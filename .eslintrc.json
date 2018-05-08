@@ -1,7 +1,7 @@
 {
     "extends": "eslint:recommended",
-    "installedESLint": true,
     "parserOptions": {
-        "ecmaVersion": 6
+        "ecmaVersion": 6,
+        "sourceType": "module"
     }
 }
