@@ -1,12 +1,16 @@
 {
     "name": "decofill",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Polyfill for box-decoration-break",
     "main": "dist/decofill.js",
     "scripts": {
         "build": "babel es6 -d dist"
     },
-    "keywords": ["javascript", "css3", "polyfill"],
+    "keywords": [
+        "javascript",
+        "css3",
+        "polyfill"
+    ],
     "author": "Nils Petersen <kontakt@entepe.de> (https://entepe.de)",
     "license": "MIT",
     "devDependencies": {
