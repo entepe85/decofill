@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 Object.defineProperty(exports, "__esModule", {
     value: true
@@ -9,7 +9,7 @@ var hasBoxDecorationBreak = function hasBoxDecorationBreak() {
     if (window.navigator.userAgent.match(/Trident/g)) {
         return false;
     }
-    return CSS.supports('( box-decoration-break: clone ) or ( -webkit-box-decoration-break: clone )');
+    return CSS.supports("( box-decoration-break: clone ) or ( -webkit-box-decoration-break: clone )");
 };
 var decoFill = exports.decoFill = function decoFill(els) {
     if (!hasBoxDecorationBreak()) {
@@ -23,8 +23,7 @@ var decoFill = exports.decoFill = function decoFill(els) {
 
                 var content = textEl.innerHTML,
                     wrapTag = textEl.tagName;
-                textEl.classList.add('box-decoration-polyfill');
-                textEl.outerHTML = '<' + wrapTag + '>' + content.replace(/<br(\s\/)?>/g, '</' + wrapTag + '><br /><' + wrapTag + '>') + ('</' + wrapTag + '>');
+                textEl.outerHTML = "<" + wrapTag + " class=\"box-decoration-polyfill\">" + content.replace(/<br(\s\/)?>/g, "</" + wrapTag + "><" + wrapTag + " class=\"box-decoration-polyfill\">") + ("</" + wrapTag + ">");
             }
         } catch (err) {
             _didIteratorError = true;

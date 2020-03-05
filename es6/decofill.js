@@ -5,7 +5,7 @@ const hasBoxDecorationBreak = () => {
         return false;
     }
     return CSS.supports(
-        '( box-decoration-break: clone ) or ( -webkit-box-decoration-break: clone )'
+        "( box-decoration-break: clone ) or ( -webkit-box-decoration-break: clone )"
     );
 };
 export const decoFill = els => {
@@ -13,12 +13,11 @@ export const decoFill = els => {
         for (let textEl of els) {
             let content = textEl.innerHTML,
                 wrapTag = textEl.tagName;
-            textEl.classList.add('box-decoration-polyfill');
             textEl.outerHTML =
-                `<${wrapTag}>` +
+                `<${wrapTag} class="box-decoration-polyfill">` +
                 content.replace(
                     /<br(\s\/)?>/g,
-                    `</${wrapTag}><br /><${wrapTag}>`
+                    `</${wrapTag}><${wrapTag} class="box-decoration-polyfill">`
                 ) +
                 `</${wrapTag}>`;
         }
