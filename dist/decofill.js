@@ -23,7 +23,7 @@ var decoFill = exports.decoFill = function decoFill(els) {
 
                 var content = textEl.innerHTML,
                     wrapTag = textEl.tagName;
-                textEl.outerHTML = "<" + wrapTag + " class=\"box-decoration-polyfill\">" + content.replace(/<br(\s\/)?>/g, "</" + wrapTag + "><" + wrapTag + " class=\"box-decoration-polyfill\">") + ("</" + wrapTag + ">");
+                textEl.outerHTML = "<" + wrapTag + " class=\"box-decoration-polyfill\">" + content.replace(/<br(\s\/)?>/g, "</" + wrapTag + "><br /><" + wrapTag + " class=\"box-decoration-polyfill\">") + ("</" + wrapTag + ">");
             }
         } catch (err) {
             _didIteratorError = true;
