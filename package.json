@@ -1,6 +1,6 @@
 {
     "name": "decofill",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "Polyfill for box-decoration-break",
     "main": "dist/decofill.js",
     "scripts": {
