@@ -17,7 +17,7 @@ export const decoFill = els => {
                 `<${wrapTag} class="box-decoration-polyfill">` +
                 content.replace(
                     /<br(\s\/)?>/g,
-                    `</${wrapTag}><${wrapTag} class="box-decoration-polyfill">`
+                    `</${wrapTag}><br /><${wrapTag} class="box-decoration-polyfill">`
                 ) +
                 `</${wrapTag}>`;
         }
